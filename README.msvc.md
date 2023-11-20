@@ -66,7 +66,7 @@ Unfortunately several of the used libraries, e.g., `getopt` does not allow stati
 Thus, you will need to distribute a few DLLs toghether with you MSVC-compiled project.
 Fortunately, the compilation with GCC under Linux is unchanged, so no extra libraries are necesssary.
 
-Under Linux, the first step when compiling the library is usually to run `./configure` stript which checks what is present at the current platform.
+Under Linux, the first step when compiling the library is usually to run `./configure` script which checks what is present at the current platform.
 It prepares `config.h` file with some `#define`'s.
 In the port we do not use this stript. 
 Instead, we just use the `config.h` file in our project.
