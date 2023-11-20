@@ -81,3 +81,8 @@ shlib-exports-*.txt
 /test/*.tmp.*
 
 /TAGS
+/.vs
+/cpp_headers/x64/Debug
+/htslib-win/x64
+/test_view/x64
+/x64
