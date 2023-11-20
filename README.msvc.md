@@ -10,9 +10,12 @@ The necessary steps are listed below.
 1. Install [vcpkg](https://vcpkg.io/en/index.html) package manager.
 ```
    git clone https://github.com/Microsoft/vcpkg.git
+```
+2. Go to the cloned directory and run bootstrap.
+```
    .\vcpkg\bootstrap-vcpkg.bat   
 ```
-2. Install the necessary packages.
+3. Install the necessary packages.
 ```
   vcpkg install zlib
   vcpkg install bzip2
@@ -26,7 +29,7 @@ The necessary steps are listed below.
   vcpkg install liblzma
   vcpkg install gettimeofday
 ```
-3. Make the packages visible for MSVC.
+4. Make the packages visible for MSVC.
 ```
 vcpkg integrate install
 ```
