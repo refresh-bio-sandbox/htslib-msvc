@@ -34,6 +34,9 @@
 #include <stdarg.h>
 #include <getopt.h>
 #include <inttypes.h>
+
+#include <os_specific.h>
+
 #include "htslib/bgzf.h"
 #include "htslib/hts.h"
 #include "htslib/hfile.h"

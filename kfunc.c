@@ -30,6 +30,9 @@
 #include <math.h>
 #include <stdlib.h>
 #include <stdint.h>
+
+#include <os_specific.h>
+
 #include "htslib/kfunc.h"
 
 /* Log gamma function

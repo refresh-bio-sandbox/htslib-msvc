@@ -39,6 +39,8 @@ DEALINGS IN THE SOFTWARE.  */
 #include <unistd.h>
 #include <limits.h>
 
+#include <os_specific.h>
+
 #include "thread_pool_internal.h"
 #include "htslib/hts_log.h"
 

@@ -28,6 +28,8 @@
 #include <assert.h>
 #include <strings.h>
 
+#include <os_specific.h>
+
 #include "bcf_sr_sort.h"
 #include "htslib/khash_str2int.h"
 #include "htslib/kbitset.h"

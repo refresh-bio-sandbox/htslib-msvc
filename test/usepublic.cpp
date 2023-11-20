@@ -24,6 +24,8 @@ DEALINGS IN THE SOFTWARE.  */
 
 #include <config.h>
 
+#include <os_specific.h>
+
 // Include *all* the public HTSlib headers.
 
 #include "../htslib/bgzf.h"

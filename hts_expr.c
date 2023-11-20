@@ -34,7 +34,13 @@ DEALINGS IN THE SOFTWARE.  */
 #include <stdlib.h>
 #include <stdint.h>
 #include <float.h>
+
+#if !defined(_MSC_VER)
 #include <regex.h>
+#else
+#include <tre/regex.h>
+#endif
+
 #include <math.h>
 
 #include "htslib/hts_expr.h"

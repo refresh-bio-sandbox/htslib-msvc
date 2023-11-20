@@ -27,6 +27,8 @@ DEALINGS IN THE SOFTWARE.  */
 
 #include <stdarg.h>
 
+#include <os_specific.h>
+
 #include "htslib/hts_defs.h"
 #include "htslib/hfile.h"
 
