@@ -1,5 +1,5 @@
 ## Experimental supportfor for MSVC compilation under Windows
-The support for MSVC compilation in Windows is experimental.
+The support for MSVC compilation under Windows is experimental.
 Please use this with care at your own risk.
 
 ## Prerequisites
