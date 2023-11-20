@@ -57,7 +57,7 @@ We ported the `htslib` library and perfomed a limited number of experiments.
 The solution contains `test_view` project which is MSVC project wrapping htslib's `test/test_view.c` file.
 You can use this program to view SAM/BAM/CRAM files and check how this works when compiled using MSVC.
 
-The solution contains also `cpp_headers` project that just wraps `test/usepublic.c` file to check that all public headers can be compiled with C++ compiler.
+The solution contains also `cpp_headers` project that just wraps `test/usepublic.cpp` file to check that all public headers can be compiled with C++ compiler.
 Notice, that here we check just the compilation.
 The liniking fails as no `myread` function is provided.
 
