@@ -32,7 +32,11 @@ vcpkg integrate install
 ```
 
 ## Library compilation
-Now you should be able to open `htslib-win.sln` solution file in MSVC and build it.
+Now you should be able to clone the repo:
+```
+git clone --recurse-submodules https://github.com/refresh-bio-sandbox/htslib-msvc.git
+```
+Then you can open `htslib-win.sln` solution file in MSVC and build it.
 As a result you should get `htslib-win.lib` file that can be used in your project.
 
 ## Technicalities
