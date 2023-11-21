@@ -17,17 +17,17 @@ The necessary steps are listed below.
 ```
 3. Install the necessary packages.
 ```
-  vcpkg install zlib
   vcpkg install bzip2
-  vcpkg install pthreads
-  vcpkg install getopt
-  vcpkg install tre
   vcpkg install curl
-  vcpkg install openssl
   vcpkg install dirent
   vcpkg install dlfcn-win32
-  vcpkg install liblzma
+  vcpkg install getopt
   vcpkg install gettimeofday
+  vcpkg install liblzma
+  vcpkg install openssl
+  vcpkg install pthreads
+  vcpkg install tre
+  vcpkg install zlib
 ```
 4. Make the packages visible for MSVC.
 ```
