@@ -34,6 +34,9 @@ The necessary steps are listed below.
 vcpkg integrate install
 ```
 
+**Note**: Steps 1, 2, 4 are necessary only if were never executed on a machine.
+Otherwise, just step 3 is required.
+
 ## Library compilation
 Now you should be able to clone the repo:
 ```
