@@ -26,6 +26,8 @@ DEALINGS IN THE SOFTWARE.  */
 #define HTS_BUILDING_LIBRARY // Enables HTSLIB_EXPORT, see htslib/hts_defs.h
 #include <config.h>
 
+#include <os_specific.h>
+
 #include <math.h>
 #include "htslib/hts.h"
 #include "htslib/ksort.h"

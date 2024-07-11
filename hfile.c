@@ -587,10 +587,10 @@ static int fd_flush(hFILE *fpv)
 {
     int ret = 0;
     do {
-#ifdef HAVE_FDATASYNC
+#if defined(HAVE_FDATASYNC) && !defined(_MSC_VER)
         hFILE_fd *fp = (hFILE_fd *) fpv;
         ret = fdatasync(fp->fd);
-#elif defined(HAVE_FSYNC)
+#elif defined(HAVE_FSYNC) && !defined(_MSC_VER)
         hFILE_fd *fp = (hFILE_fd *) fpv;
         ret = fsync(fp->fd);
 #endif

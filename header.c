@@ -34,6 +34,9 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include <string.h>
 #include <assert.h>
 #include <errno.h>
+
+#include <os_specific.h>
+
 #include "textutils_internal.h"
 #include "header.h"
 

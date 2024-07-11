@@ -36,6 +36,9 @@
 #include <inttypes.h>
 #include <sys/stat.h>
 #include <sys/time.h>
+
+#include <os_specific.h>
+
 #include "htslib/bgzf.h"
 #include "htslib/hts.h"
 #include "htslib/hfile.h"

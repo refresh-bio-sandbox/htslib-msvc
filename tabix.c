@@ -35,6 +35,9 @@ DEALINGS IN THE SOFTWARE.  */
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <errno.h>
+
+#include <os_specific.h>
+
 #include "htslib/tbx.h"
 #include "htslib/sam.h"
 #include "htslib/vcf.h"

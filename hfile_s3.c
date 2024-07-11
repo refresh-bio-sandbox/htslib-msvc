@@ -34,6 +34,8 @@ DEALINGS IN THE SOFTWARE.  */
 
 #include <errno.h>
 
+#include <os_specific.h>
+
 #include "hfile_internal.h"
 #ifdef ENABLE_PLUGINS
 #include "version.h"

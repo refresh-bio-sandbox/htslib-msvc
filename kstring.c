@@ -33,6 +33,9 @@
 #include <string.h>
 #include <stdint.h>
 #include <math.h>
+
+#include <os_specific.h>
+
 #include "htslib/kstring.h"
 
 int kputd(double d, kstring_t *s) {

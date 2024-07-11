@@ -42,6 +42,8 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 #include <stdarg.h>
 
+#include <os_specific.h>
+
 #include "cram/string_alloc.h"
 #include "cram/pooled_alloc.h"
 

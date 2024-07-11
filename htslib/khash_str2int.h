@@ -26,6 +26,7 @@ DEALINGS IN THE SOFTWARE.  */
 #define HTSLIB_KHASH_STR2INT_H
 
 #include "khash.h"
+#pragma warning(disable:4146)
 
 KHASH_MAP_INIT_STR(str2int, int)
 

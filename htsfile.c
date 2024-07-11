@@ -32,6 +32,8 @@ DEALINGS IN THE SOFTWARE.  */
 #include <string.h>
 #include <getopt.h>
 
+#include <os_specific.h>
+
 #include "htslib/hfile.h"
 #include "htslib/hts.h"
 #include "htslib/sam.h"

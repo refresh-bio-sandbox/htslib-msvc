@@ -45,7 +45,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include "os.h"
 #include "mFILE.h"
 
-#ifdef HAVE_MMAP
+#if defined(HAVE_MMAP) && !defined(_MSC_VER)
 #include <sys/mman.h>
 #endif
 
@@ -117,7 +117,7 @@ static char *mfload(FILE *fp, const char *fn, size_t *size, int binary) {
 }
 
 
-#ifdef HAVE_MMAP
+#if defined(HAVE_MMAP) && !defined(_MSC_VER)
 /*
  * mmaps in the file, but only for reading currently.
  *
@@ -288,7 +288,7 @@ mFILE *mfreopen(const char *path, const char *mode_str, FILE *fp) {
         if (a)
             r = 1;
     }
-#ifdef HAVE_MMAP
+#if defined(HAVE_MMAP) && !defined(_MSC_VER)
     if (strchr(mode_str, 'm'))
         if (!w) mode |= MF_MMAP;
 #endif
@@ -297,7 +297,7 @@ mFILE *mfreopen(const char *path, const char *mode_str, FILE *fp) {
         mf = mfcreate(NULL, 0);
         if (NULL == mf) return NULL;
         if (!(mode & MF_TRUNC)) {
-#ifdef HAVE_MMAP
+#if defined(HAVE_MMAP) && !defined(_MSC_VER)
             if (mode & MF_MMAP) {
                 if (mfmmap(mf, fp, path) == -1) {
                     mf->data = NULL;
@@ -364,7 +364,7 @@ int mfclose(mFILE *mf) {
 
     mfflush(mf);
 
-#ifdef HAVE_MMAP
+#if defined(HAVE_MMAP) && !defined(_MSC_VER)
     if ((mf->mode & MF_MMAP) && mf->data) {
         /* Mmaped */
         munmap(mf->data, mf->size);
